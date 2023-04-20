@@ -10,5 +10,6 @@ for (const priceOfEachItem of priceArr) {
 let totalRow = document.createElement('tr');
 let newcell = totalRow.insertCell(0);
 newcell.textContent = totalPrice
+totalRow.setAttribute('data-ns-test', 'grandTotal')
 
 tableEl.insertAdjacentElement('beforeend', totalRow);
